@@ -1,0 +1,160 @@
+h1{
+	text-align: center;
+}
+
+.card{
+	position: relative;
+	display:inline-block;
+	background-color:white;
+	color:black;
+	padding:5px;
+	margin:4px;
+	border:2px solid;
+	width:80px;
+	height:120px;
+	border-radius:5px;
+	font-size: 36px;
+	text-align: center;
+	-moz-box-shadow: .2em .2em .5em #333;
+	-webkit-box-shadow: .2em .2em .5em #333;
+	box-shadow: .2em .2em .5em #333;
+}
+.overlay{
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	opacity: 1;
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-image: url('images/cover.jpg'); 
+	top: 0;
+	left:0;
+}
+
+.done{
+	opacity: 1;
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-image: url('images/cover.jpg'); 
+	top: 0;
+	left:0;
+}
+button#save{
+	position: fixed;
+	left:10;
+	top:200;
+	height: 50px;	
+}
+
+button#new{
+	position: fixed;
+	left:10;
+	top:230;
+	height: 50px;	
+}
+
+div#register{
+	position: fixed;
+	top: 10;
+	right:50;
+	height:50;
+	width:70;
+}
+
+button.single{
+	position: fixed;
+	top: 100;
+	left: 550;
+	height:120px;
+	width: 120px;
+}
+
+button.multi{
+	position: fixed;
+	top: 100;
+	left: 700;
+	height:120px;
+	width: 120px;
+}
+
+button.net{
+	position: fixed;
+	top: 250;
+	left: 550;
+	height:80px;
+	width: 270px;
+}
+
+.sideBox{
+	width:500px;
+	height:500px;
+	display: inline-block;	
+	position: fixed;
+	top:100px;
+	left:35%;
+}
+
+#clicked
+{
+	opacity: 0;
+	-webkit-transition:1s;
+	-moz-transition:1s;
+}
+
+#unclicked
+{
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	opacity: 1;
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-image: url('images/cover.jpg'); 
+	top: 0;
+	left:0;
+}
+
+#match
+{
+	opacity: 0;
+}
+
+#init{
+
+}
+
+.show{
+	opacity: 0;
+	-webkit-transition:1s;
+	-moz-transition:1s;
+}
+
+.hide{
+	opacity: 1;
+	-webkit-transition:1s;
+	-moz-transition:1s;
+}
+
+.diamond,.heart{
+	color:red;
+	border-color: black;
+}	
+
+#pts{
+	display: inline-block;
+	position: fixed;
+	top:100;
+	right: 350;
+}
+
+#player{
+	display: inline-block;
+	position: fixed;
+	top: 10;
+	left: 10;
+}
+
+.turn{
+	font-size: 24px;
+}

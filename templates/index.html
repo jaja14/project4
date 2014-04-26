@@ -1,0 +1,32 @@
+<html>
+<head>
+    <!--
+<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+-->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" />
+
+  </head>
+<body>
+    <div class="container">
+    
+  <h2>Welcome to a near useless chatroom system</h2>
+        
+    
+    Enter your name <input type="text" id="name"/> and 
+        <a id="newchat" class="btn btn-primary" href="{{ values.roomid }}">Start a new chat</a>
+
+  </div>
+</body>
+<script src="{{ url_for('static',filename='front.js') }}"></script>
+<!--
+<script>
+    channel = new goog.appengine.Channel('{{ values.token }}');
+    socket = channel.open();
+    socket.onopen = onOpened;
+    socket.onmessage = onMessage;
+    socket.onerror = onError;
+    socket.onclose = onClose;
+  </script>
+-->
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+    <!--
+<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+-->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" />
+
+  </head>
+<body>
+    <div class="container">
+    
+  <h2>Welcome my Breddrin (or Sistren).</h2>
+        <p>You're seeing this page because 
+      someone invited you to a chatroom</p>
+        
+    
+    Enter your name <input type="text" id="name"/> to start chatting
+        <a id="newchat" class="btn btn-primary" href="{{ values.roomid }}">Join chat</a>
+
+  </div>
+</body>
+<script src="{{ url_for('static',filename='front.js') }}"></script>
+<!--
+<script>
+    channel = new goog.appengine.Channel('{{ values.token }}');
+    socket = channel.open();
+    socket.onopen = onOpened;
+    socket.onmessage = onMessage;
+    socket.onerror = onError;
+    socket.onclose = onClose;
+  </script>
+-->
+</html>
